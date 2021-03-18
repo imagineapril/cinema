@@ -4,7 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Билеты в кино</title>
+    <style>
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid #000;
+        }
+    </style>
 </head>
 <body>
     <div>
@@ -32,21 +43,27 @@
             <path d="M98.9906 24.5247C97.9994 24.5247 96.9814 24.4943 95.9901 24.5247C96.9814 24.5247 97.9726 24.5247 98.9906 24.5247C99.9551 24.5247 100.92 24.5247 101.884 24.5247C100.893 24.5552 99.9551 24.5247 98.9906 24.5247Z" fill="white"/>
             </svg>
         </div>
+        <nav>
         <div>
-            <span>+7 (800) 355 12-56</span>
-            <span>kino@innopolis.ru</span>
+            <a href="tel: +78003551256">
+            +7 (800) 355 12-56
+            </a>
+            <a href="mailto: kino@innopolis.ru">
+            kino@innopolis.ru
+            </a>
             <span>ул.Спортивная д.1</span>
         </div>
         <div>
-            <span><a href="#">EVENT DETAILS</a></span> 
-            <span><a href="#">SPEAKERS</a></span> 
-            <span><a href="#">SPONSORS</a></span> 
-            <span><a href="#">PAST EVENTS</a></span> 
-            <span><a href="#">CONTACT</a></span> 
+            <span><a href="#block1">Почему мы</a></span> 
+            <span><a href="#block2">Выберите фильм</a></span> 
+            <span><a href="#block3">Подарок</a></span> 
+            <span><a href="#block4">Фильмы</a></span> 
+            <span><a href="#block5">Контакты</a></span> 
         </div>
+        </nav>
         <div>
             <div>
-                <span>Закажите билет в кино</span>
+                <h1>Закажите билет в кино</h1>
             </div>
             <div>
                 <span><b>Всем покупателям подарок!</b></span>
@@ -70,14 +87,14 @@
     </section>
     <section>
         <div>
-            <div>
-                <span>Почему мы?</span>
+            <div id="block1">
+                <h2>Почему мы?</h2>
             </div>
             <div>
                 <div>
                     <div>
                         <img src="images/bolshie_ekrany.png" alt="big_screen">
-                        <span><b>Большие экраны</b></span>
+                        <h3>Большие экраны</h3>
                     </div>
                     <div>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -88,7 +105,7 @@
                 <div>
                     <div>
                         <img src="images/obemniy_zvuk.png" alt="double_sound">
-                        <span><b>Объёмный звук</b></span>
+                        <h3>Объёмный звук</h3>
                     </div>
                     <div>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -99,7 +116,7 @@
                 <div>
                     <div>
                         <img src="images/udobnyekresla.png" alt="seats">
-                        <span><b>Удобные кресла</b></span>
+                        <h3>Удобные кресла</h3>
                     </div>
                     <div>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -112,7 +129,7 @@
                 <div>
                     <div>
                         <img src="images/ujutnajaatmosphera.png" alt="cozy_atmosphere">
-                        <span><b>Уютная атмосфера</b></span>
+                        <h3>Уютная атмосфера</h3>
                     </div>
                     <div>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -123,7 +140,7 @@
                 <div>
                     <div>
                         <img src="images/polnoe_pogrushenie.png" alt="full_stay">
-                        <span><b>Полное погружение</b></span>
+                        <h3>Полное погружение</h3>
                     </div>
                     <div>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -134,7 +151,7 @@
                 <div>
                     <div>
                         <img src="images/kisses.png" alt="kisses">
-                        <span><b>Поцелуи на заднем ряду</b></span>
+                        <h3>Поцелуи на заднем ряду</h3>
                     </div>
                     <div>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -146,9 +163,55 @@
         </div>
     </section>
     <section>
+            <h2>Список (маркированный)</h2>
+            <ul>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ul>
+    </section>
+    <section>
+            <h2>Список (нумерованный)</h2>
+            <ol>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ol>
+    </section>
+    <section id="block2">
+                <h2>Выберите фильм</h2>
+                <table>
+                    <tr>
+                        <th>Начало сеанса</th>
+                        <th>Название фильма</th>
+                        <th>Жанр</th>
+                    </tr>
+                    <tr>
+                        <td>10:00</td>
+                        <td>Человек-паук</td>
+                        <td>Фантастика, боевик, приключения</td>
+                    </tr>
+                    <tr>
+                        <td>12:00</td>
+                        <td>Собачья жизнь 2</td>
+                        <td>Фэнтэзи, драма, комедия</td>
+                    </tr>
+                    <tr>
+                        <td>14:00</td>
+                        <td>История игрушек 4</td>
+                        <td>Мультфильм, фэнтэзи, комедия</td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                        <td>Люди в чёрном: Интэрнэшнл</td>
+                        <td>Фантастика, боевик, комедия</td>
+                    </tr>
+                </table>
+    </section>
+    <section>
         <div>
-            <div>
-                <span><b>Подарок каждому!</b></span>
+            <div id="block3">
+                <h2>Подарок каждому!</h2>
             </div>
             <div>
                 <div>
@@ -176,8 +239,9 @@
     </section>
     <section></section>
         <div>
-            <div>
-                <span>Фильмы</span>
+            <div id="block4">
+                <h2>Фильмы</h2>
+
             </div>
             <div>
                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
@@ -221,7 +285,7 @@
     <section>
         <div>
             <div>
-                <span>Товары</span>
+                <h2>Товары</h2>
             </div>
             <div>
                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
@@ -234,7 +298,7 @@
         <div>
             <div>
                 <div>
-                    <span>Отзывы</span>
+                    <h2>Отзывы</h2>
                 </div>
                 <div>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
@@ -245,7 +309,7 @@
             <div>
                 <div>
                     <div>
-                        <span><b>Елена Еленова</b></span>
+                        <h3>Елена Еленова</h3>
                     </div>
                     <div>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
@@ -254,7 +318,7 @@
                 </div>
                 <div>
                     <div>
-                        <span><b>Борис Борисов</b></span>
+                        <h3>Борис Борисов</h3>
                     </div>
                     <div>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
@@ -263,7 +327,7 @@
                 </div>
                 <div>
                     <div>
-                        <span><b>Леонардо ДиКаприо</b></span>
+                        <h3>Леонардо ДиКаприо</h3>
                     </div>
                     <div>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
@@ -272,6 +336,40 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section>
+        <h2>Обратная связь</h2>
+        <form action="/order">
+            <div>
+                <label for="input1">Полное имя</label>
+                    <input id="input1" type="text" name="username" value="" required
+                        placeholder="Полное имя">
+            </div>
+            <div>
+                <label>Выберите место
+                    <select name="place" required>
+                        <option value="">--Не выбрано--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </label> 
+            </div>
+            <div>
+                <label for="input1">Напишите свой отзыв</label>
+                    <input id="input1" type="text"
+                        placeholder="Напишите Ваш отзыв">
+            </div>
+            <div>
+                <label for="chb1">
+                    <input id="1" type="checkbox" required>
+                    Я согласен на обработку своих персональных данных
+                </label>
+            </div>
+            <div>
+                <input type="submit" value="Отправить">
+            </div>
+        </form>
     </section>
     <footer>
             <div>
@@ -300,8 +398,8 @@
                 </div>   
             </div>
              <div>
-                <div>
-                    <span>CONTACT</span>
+                <div id="block5">
+                    <span>Контакты</span>
                 </div>
                 <div>
                     <span>+7 (800) 355 12-56</span>
