@@ -1,0 +1,38 @@
+body{
+    font-family: 'IBM Plex Sans',
+    sans-serif;
+}
+
+
+.block2__table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.block2__table th {
+    background: #A3CC40;
+    padding: 10px 20px;
+    text-align: left;
+}
+.block2__link {
+    text-decoration: none;
+    width: 146.56px;
+    height: 26px;
+    line-height: 1.3;
+    color: #fff;
+}
+.block2_link svg {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 11px;
+}
+.block2__table td {
+    background: #4C4D4F;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+}
+.block2__table tr:nth-child(2n) td {
+    background: #373737;
+}
