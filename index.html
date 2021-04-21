@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <title>Билеты в кино</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <style>
         table {
@@ -38,52 +38,53 @@
             float: left;
             width: 33%;
         }
-
-        .div4 {
-            height: 728px;
-            background-image: url(images/main.png);
-            width: 100%;
-        }
     </style>
 </head>
-
 <body>
-    <div class=div4>
-        <div><a href="https://innopolis.university/" target="_blank"><img src="images/logo.svg" alt="logo"></a>
+    <div class="block01">
+        <div class="container">
+                <div class="block01__col1">
+                    <a href="https://innopolis.university/" target="_blank"><img src="images/logo.svg" alt="logo"></a>
+                </div>
+                    <div class="block01__col2">
+                        <div class="block01_row1">
+                            <p class="block01__tel"> 
+                            <a class="link-white block01__tel" href="tel: +78003551256">+7 (800) 355 12-56</a>
+                            </p>
+                            <p class="block01__mail">
+                            <a class="link-white link-underline block01__mail" href="mailto: kino@innopolis.ru">kino@innopolis.ru</a>
+                            </p>
+                            <p class="block01__address">ул. Спортивная д.1
+                            </p>
+                            <a href="#" class="block01__call" target="_blank"><img src="images/call_icon.svg" alt="call_icon"><span>Заказать звонок</span></a>
+                            <div class="block01__language">
+                            <p><a href="#"><span class="link-white">RU</span><img src="images/language_rectangle.svg"></a>
+                            </p>
+                        </div>
+                    </div>
+                
+                    <nav class="block01__nav">
+                        <ul>
+                            <li><a class="block01__link" href="#block1">EVENT DETAILS</a></li>
+                            <li><a class="block01__link" href="#block2">SPEAKERS</a></li>
+                            <li><a class="block01__link" href="#block3">SPONSORS</a></li>
+                            <li><a class="block01__link" href="#block4">PAST EVENTS</a></li>
+                            <li><a class="block01__link" href="#block5">CONTACT</a></li>
+                        </ul>
+                    </nav>                              
+                </div>   
         </div>
-        <nav>
-            <div>
-                <a href="tel: +78003551256">
-                    +7 (800) 355 12-56
-                </a>
-                <a href="mailto: kino@innopolis.ru">
-                    kino@innopolis.ru
-                </a>
-                <span>ул.Спортивная д.1</span>
-            </div>
-            <div>
-                <span><a href="#block1">Почему мы</a></span>
-                <span><a href="#block2">Выберите фильм</a></span>
-                <span><a href="#block3">Подарок</a></span>
-                <span><a href="#block4">Фильмы</a></span>
-                <span><a href="#block5">Контакты</a></span>
-            </div>
-        </nav>
         <div>
             <h1>Закажите билет в кино</h1>
-            <b>Всем покупателям подарок!</b>
+            <b class="underh1">Всем покупателям подарок!</b>
         </div>
     </div>
     <div>
-        <b>Добро пожаловать!</b>
-        <div>
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam.</span><br><br>
-            <span>Duis aute irure dolor in reprehenderit in voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                occaecat cupidatat non proident, sunt.</span>
-        </div>
+        <div>Добро пожаловать!</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam.</div>
+        <div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt.</div>
     </div>
     <section>
         <div id="block1">
@@ -91,21 +92,21 @@
         </div>
         <div>
             <div>
-                <img src="images/bolshie_ekrany.png" alt="big_screen">
+                <img src="images/bigscreens.png" alt="big_screens">
                     <h3>Большие экраны</h3>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna
                         aliqua. Ut enim ad minim veniam.</span>        
             </div>
             <div>
-                <img src="images/obemniy_zvuk.png" alt="double_sound">
+                <img src="images/surroundsound.png" alt="surround_sound">
                     <h3>Объёмный звук</h3>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna
                         aliqua. Ut enim ad minim veniam.</span>   
             </div>
             <div>
-                <img src="images/udobnyekresla.png" alt="seats">
+                <img src="images/comfortablechairs.png" alt="comfortable_chairs">
                     <h3>Удобные кресла</h3>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -114,14 +115,14 @@
         </div>
         <div>
             <div>
-                <img src="images/ujutnajaatmosphera.png" alt="cozy_atmosphere">
+                <img src="images/cozyatmosphere.png" alt="cozy_atmosphere">
                     <h3>Уютная атмосфера</h3>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna
                         aliqua. Ut enim ad minim veniam.</span>
             </div>
             <div>
-                <img src="images/polnoe_pogrushenie.png" alt="full_stay">
+                <img src="images/fullimmersion.png" alt="full_immersion">
                     <h3>Полное погружение</h3>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -142,9 +143,9 @@
             <h2>Выберите фильм</h2>
             <table class="block2__table">
                 <tr>
-                    <th>
+                    <th class="green">
                     </th>
-                    <th>
+                    <th class="green">
                         <a href="#" class="block2__link" >
                             Начало сеанса
                             <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -152,7 +153,7 @@
                             </svg>
                         </a>
                     </th>
-                    <th>
+                    <th class="green">
                         <a href="#" class="block2__link">
                             Название фильма
                             <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -160,14 +161,14 @@
                             </svg>
                         </a>
                     </th>
-                    <th>
+                    <th class="green">
                         <a href="#" class="block2__link">
                             Жанр
                         </a>
                     </th>
                 </tr>
                 <tr>
-                    <td><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <td class="grey"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M4.60581 8.79378L1.46056 5.93033L0.787354 6.66979L4.70255 10.2342L10.8223 2.94099L10.0562 2.2982L4.60581 8.79378Z"
                                 fill="white" />
