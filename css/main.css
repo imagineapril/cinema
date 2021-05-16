@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'IBM_Plex_Sans';
     src: url(../fonts/IBMPlexSans-Regular.ttf);
-    font-weight: 400; 
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -12,6 +12,7 @@
     font-weight: 100;
     font-style: normal;
 }
+
 /**Layout*/
 html {
     box-sizing: border-box;
@@ -56,10 +57,10 @@ body {
 
 }
 
-.block01 {
+header {
     background: url('../images/main.jpg') no-repeat;
     background-size: cover;
-    height: 625px;
+    height: 682px;
 }
 
 .block01__col1 {
@@ -159,11 +160,11 @@ body {
     fill: #90d23d;
 }
 
-.block01__nav{
+.block01__nav {
     padding: 5 0 0;
 }
 
-.block01__row2{
+.block01__row2 {
     float: left;
     margin: 0;
     font-family: 'IBM_Plex_Sans';
@@ -205,16 +206,192 @@ body {
     transition: 0.2s;
 }
 
-.block01__nav li{
+.block01__nav li {
     display: inline;
     margin-left: 50px;
     line-height: 2;
     margin-left: 50px;
-    line-height: 16px;  
+    line-height: 16px;
 }
 
 .block01::after {
-    content: '' ;
+    content: '';
+    display: block;
+    border-top: 130px solid transparent;
+    border-right: 100vw solid #FFFFFF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.block02 {
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 27px 39px rgba(163, 204, 64, 0.18);
+    border-radius: 10px;
+    padding: 30px 47px;
+    max-width: 420px;
+    right: 60px;
+    bottom: -50px;
+}
+
+.block02__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 14px;
+    margin-bottom: 15px;
+}
+
+.block02__title {
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 43px;
+    margin-bottom: 15px;
+}
+
+.why {
+    padding: 50 0 0;
+}
+
+.why h2 {
+    margin-bottom: 84px;
+    margin-top: 40px;
+}
+
+.why__card {
+    width: 245px;
+    height: 338px;
+    float: left;
+    margin-right: 55px;
+}
+
+.why__card h3 {
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.present {
+    margin-top: 100px;
+    background-image: url('../images/present_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 587px;
+    position: relative;
+}
+
+.present p {
+    color: #fff;
+    margin-right: 250px;
+    margin-left: 500px;
+    color: #fff;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: right;
+    /* margin-bottom: 30px;  */
+}
+
+.present::after {
+    content: '';
+    display: block;
+    border-top: 130px solid transparent;
+    border-right: 100vw solid #FFFFFF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.present::before {
+    content: '';
+    display: block;
+    border-bottom: 130px solid transparent;
+    border-left: 100vw solid #FFFFFF;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+.present__title {
+    font-family: 'IBM_Plex_Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 62px;
+    text-align: right;
+    color: #FFFFFF;
+    /* margin-top: -150px; */
+    margin-right: 250px;
+    margin-bottom: 30px;
+}
+
+.rounded {
+    position: relative;
+    border-radius: 100%;
+    /* margin-top: -150px; */
+    margin-bottom: -300px;
+    margin-left: 100px;
+    z-index: 1000;
+}
+
+.film__card {
+    height: 200px;
+    float: left;
+    width: 280px;
+    border-collapse: collapse;
+    color: transparent;
+    background-repeat: no-repeat;
+}
+
+.film__link {
+    line-height: 1.33;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 38px;
+}
+
+
+.film__card:hover {
+    color: #fff;
+    transition: 0.2s;
+}
+
+.film__card1_backgroundimage {
+    background-image: url('../images/the_revenant.png');
+    height: 200px;
+}
+
+.film__card2_backgroundimage {
+    background-image: url('../images/ice.png');
+    height: 200px;
+
+}
+
+.film__card3_backgroundimage {
+    background-image: url('../images/the_martian.png');
+    height: 200px;
+}
+
+.film__card6_backgroundimage {
+    background-image: url('../images/territory.jpg');
+    height: 200px;
+}
+
+.feedback {
+    background-image: url('../images/feedback_background.png');
+    margin-top: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 938px;
+    position: relative;
+}
+
+.feedback::after {
+    content: '';
     display: block;
     border-top: 100px solid transparent;
     border-right: 100vw solid #FFFFFF;
@@ -223,11 +400,29 @@ body {
     bottom: 0;
 }
 
-.check {
-    width: 500px;
-    height: 500px;
-    background: url('../images/main.jpg');
+.feedback::before {
+    content: '';
+    display: block;
+    border-bottom: 100px solid transparent;
+    border-left: 100vw solid #FFFFFF;
+    position: relative;
+    left: 0;
+    bottom: 0;
 }
+
+.feedback h3 {
+    color: #fff;
+}
+
+.feedback p {
+    color: #fff;
+}
+
+.feedback__display {
+    display: flex;
+    flex-direction: row;
+}
+
 
 .card {}
 
@@ -308,7 +503,10 @@ h2 {
     font-size: 48px;
     line-height: 62px;
     color: #A3CC40;
+    margin-bottom: 40px;
 }
+
+
 
 h3 {
     font-family: 'IBM_Plex_Sans';
