@@ -14,7 +14,9 @@
 
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script defer src="libs/owl/owl.carousel.min.js"></script>
-    <script defer src="js/main.js"
+    <script defer src="js/main.js"></script>
+    <script defer src="js/films-table.js"></script>
+    <script defer src="js/pets.js"></script>
 
     <!-- <script src="main.js"></script> -->
     <style>
@@ -138,6 +140,7 @@
         <div class="container">
             <h2>Выберите фильм</h2>
             <table class="block2__table">
+                <thead>
                 <tr>
                     <th class="green">
                     </th>
@@ -163,7 +166,9 @@
                         </a>
                     </th>
                 </tr>
-                <tr>
+                </thead>
+                <tbody id="block2-table-body">
+                <!-- <tr>
                     <td class="grey"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -210,7 +215,8 @@
                     <td>16:00</td>
                     <td>Люди в чёрном: Интэрнэшнл</td>
                     <td>Фантастика, боевик, комедия</td>
-                </tr>
+                </tr> -->
+                </tbody>
             </table>
         </div>
         <div>
