@@ -1,0 +1,41 @@
+.hidden {
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #969696;
+    z-index: 1000;
+}
+
+.close {
+    position: absolute;
+    right: 22px;
+    top: 22px;
+    background: transparent;
+    background-image: url("../images/close.svg");
+    width: 35px;
+    height: 35px;
+}
+
+.close:hover    {
+    background-image: url("../images/close-hovered.svg");
+}
+
+.form-wrapper {
+    position: relative;
+    background-color: #fff;
+    max-width: 500px;
+    min-height: 100px;
+    margin: 120px auto;
+    border-radius: 40px;
+}
+
+.button1 {
+    z-index: 999;
+    position: relative;
+}
