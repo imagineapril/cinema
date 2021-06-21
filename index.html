@@ -21,9 +21,10 @@
     <script defer src="target/main.js"></script>
     <script defer src="target/films-table.js"></script>
     <script defer src="target/present.js"></script>
+    <script defer src="target/blocks-films.js"></script>
   
 
-    <!-- <script src="main.js"></script>  
+    <script src="main.js"></script>  
     <style>
         table {
             border-collapse: collapse;
@@ -173,7 +174,7 @@
                 </tr>
                 </thead>
                 <tbody id="block2-table-body">
-                <!-- <tr>
+                <tr>
                     <td class="grey"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -220,7 +221,7 @@
                     <td>16:00</td>
                     <td>Люди в чёрном: Интэрнэшнл</td>
                     <td>Фантастика, боевик, комедия</td>
-                </tr> -->
+                </tr>
                 </tbody>
             </table>
         </div>
@@ -262,7 +263,7 @@
                 <button class="button1" id="btn-present-open">Получить подарок</button>
             </section>
         </div>
-        <div class="container">
+        <!-- <div class="container">
             <table class="film">
                 <h2 id="block4">Фильмы</h2>
                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -332,7 +333,78 @@
                         </div>
                     </th>
                 </tr>
+                <tr>
+                    <th class="film__card film__card1_backgroundimage">
+                        <span><a class="film__link" href="https://www.kinopoisk.ru/film/522941/" target="_blank">Выживший</a></span>
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis
+                            molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra
+                            sit amet aliquam id diam maecenas.
+                        </div>
+                    </th>
+                    <th class="film__card film__card2_backgroundimage">
+                        <span><a class="film__link" href="https://www.kinopoisk.ru/film/900052/" target="_blank">Лёд</a></span>
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis
+                            molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra
+                            sit amet aliquam id diam maecenas.
+                        </div>
+                    </th>
+                    <th class="film__card film__card6_backgroundimage">
+                        <span><a class="film__link" href="https://www.kinopoisk.ru/film/601933/" target="_blank">Территория</a></span>
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis
+                            molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra
+                            sit amet aliquam id diam maecenas.
+                        </div>
+                    </th>
+                </tr>
             </table>
+        </div> -->
+        <div class="block05">
+            <div class="container">
+                <p class="header block05__header">Фильмы</p>
+                <p class="simple-text block05__text1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eligendi numquam placeat voluptatibus excepturi similique vel, expedita itaque. Dolore pariatur aliquam explicabo, blanditiis at fugiat laborum eveniet nesciunt optio molestiae!</p>
+                <div class="block05__inner" id="block05-films-wrapper">
+                    <div class="block05__movie1">
+                        <div class="block-05__bg">
+                            <img src="images/the_revenant.png" alt="">
+                        </div>
+                        <div class="block05_shadow"></div>
+                        <div class="block05__descr">
+                            <div class="block05__text2">Лёд</div>
+                            <div class="block05__text3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eos exercitationem perferendis quo adipisci animi placeat dignissimos debitis ut cumque qui quidem labore, tenetur perspiciatis obcaecati molestiae voluptatibus sed ullam.</div>
+                        </div>
+                    </div>
+                    <div class="block05__movie1">
+                        <div class="block-05__bg">
+                            <img src="images/ice.png" alt="">
+                        </div>
+                        <div class="block05_shadow"></div>
+                        <div class="block05__descr">
+                            <div class="block05__text2">Марсианин</div>
+                            <div class="block05__text3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eos
+                                exercitationem perferendis quo adipisci animi placeat dignissimos debitis ut cumque qui quidem labore,
+                                tenetur perspiciatis obcaecati molestiae voluptatibus sed ullam.</div>
+                        </div>
+                    </div>
+                    <div class="block05__movie1">
+                        <div class="block-05__bg">
+                            <img src="images/the_martian.png" alt="">
+                        </div>
+                        <div class="block05_shadow"></div>
+                        <div class="block05__descr">
+                            <div class="block05__text2">Выживший</div>
+                            <div class="block05__text3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eos
+                                exercitationem perferendis quo adipisci animi placeat dignissimos debitis ut cumque qui quidem labore,
+                                tenetur perspiciatis obcaecati molestiae voluptatibus sed ullam.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <section>
             <div>
@@ -479,12 +551,12 @@
 <div class="popup hidden" id="present-popup">
     <div class="form-wrapper">
         <button class="close" id="present-popup__close">
-            <!-- <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="17.5" cy="17.5" r="17.5" fill="#A3CC40" />
                 <path
                     d="M25.5363 11.8271L23.9176 10.2084L17.5 16.626L11.0824 10.2084L9.46362 11.8271L15.8812 18.2447L9.46362 24.6623L11.0824 26.2811L17.5 19.8635L23.9176 26.2811L25.5363 24.6623L19.1187 18.2447L25.5363 11.8271Z"
                     fill="white" />
-            </svg> -->
+            </svg>
         </button>
         <form id="present-form" class="popup-form">
             <div class="st-input1 st-input1_focused st-input1_error">
@@ -498,8 +570,8 @@
                 <p class="st-input1__error-msg">Error</p>
             </div>
             <div class="input-wrap">
-                <p class="st-input1__label">Выберите подарок</p>
-                <select name="" id="" class="input-text input-select">
+                <select name="present" id="choose-present" class="input-text input-select">
+                    <option selected value="default">Выберите подарок</option>
                     <option value="thirdTicket4Free">Бесплатный третий билет</option>
                     <option value="doublePopcorn">Удвоим попкорн</option>
                     <option value="popIt">Радужный Pop It</option>
@@ -507,9 +579,8 @@
             </div>
 
             <label class="st-checkbox">
-                <input type="checkbox" name="input-checkbox" class="input-checkbox">
-                <span class="st-checkbox__dot1"></span>
-                Я согласен на обработку персональных данных.
+                <input type="checkbox" name="input-checkbox" class="input-checkbox"/>
+                <span class="st-checkbox__dot1">Я согласен на обработку персональных данных.</span>
             </label>
             <div class="input-wrap">
                 <button class="button1 button1_big">Отправить</button>
