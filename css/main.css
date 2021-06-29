@@ -345,6 +345,45 @@ header {
     background-repeat: no-repeat;
 }
 
+/* .film__card_shadow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: .8;
+    background: #000;
+    z-index: 10;
+    transition: .2s;
+}
+
+.film__card_shadow:hover    {
+    opacity: .4;
+}
+
+.film__card_description {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: rgba(144, 210, 61, 0.6);
+    transition: .2s;
+    transition-delay: .2s;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+}
+
+.film__card_description:hover   {
+    top: 0;
+} */
+
+
+
+
+
 .film__link {
     line-height: 1.33;
     color: #fff;
@@ -635,5 +674,111 @@ button:active {
     border-radius: 15px;
 }
 
-/**Сетка макета*/
-/**Компоненты*/
+.st-input1 {
+    position: relative;
+}
+
+.st-input1__label   {
+    /* position: absolute; */
+    text-align: left;
+    transition: .2s;
+    font-size: .75rem;
+    color: #a1a1a1;
+    top: .6rem;
+    z-index: 0;
+    left: .75rem;
+}
+
+.st-input1:hover,
+.st-input1_focused  {
+    background: #FFFFFF;
+    box-shadow: 0 0 0 .25rem rgba(170, 243, 77, 0.52);
+}
+
+.st-input1_focused .st-input1__label    {
+    top: -.5rem;
+    color: #333333;
+    background: #fff;
+    padding: 0 .25rem;
+    left: .5rem;
+}
+
+.st-input1__input   {
+    font-size: .75rem;
+    color: #333333;
+    position: relative;
+    padding: .6rem, .75rem;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-radius: .25rem;
+}
+
+.st-input1_error    {
+    box-shadow: 0 0 0 .25rem rgba (220, 60, 15 , .5);
+}
+
+.st-input1_err-msg  {
+    font-size: .55rem;
+    position: absolute;
+    bottom: .1rem;
+    left: .75rem;
+    color: #dc3c10;
+}
+
+.input-select   {
+    font-size: .75rem;
+    margin-bottom: 1.5rem;
+    color: #a1a1a1;
+    padding: .6rem .75rem;
+    border-radius: .25rem;
+    border: 0;
+    width: 100%;
+    transition: 0.2s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /**добавить файл с рисунком*/
+    background: url("../images/down-arrow.svg") 96% center / 5% no-repeat #dedede;
+}
+
+.input-select-selected {
+    background-color: #fff;
+    box-shadow: 0 0 0 .25rem rgba(170, 243, 77, 0.52);
+}
+
+.st-checkbox input  {
+    display: none;
+}
+
+.st-checkbox    {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #333333;
+    font-size: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.st-checkbox__dot   {
+    border: 1px solid rgb(170, 243,77);
+    border-radius: .2rem;
+    width: .8rem;
+    height: .8rem;
+    flex: none;
+    margin-right: .3rem;
+}
+
+.st-checkbox input:checked + .st-checkbox__dot  {
+
+}
+
+
+.film-inner {
+     display: grid;
+     grid-template-rows: 1fr 1fr 1fr;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-gap: 0;
+}
